@@ -1,5 +1,5 @@
 import { Box, Flex, Text, Tooltip, useColorModeValue } from "@chakra-ui/react";
-import { InfoOutlineIcon } from "@chakra-ui/icons";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const MetricCard = ({ label, value, subValue, description }) => {
   const bgColor = useColorModeValue("gray.700", "gray.800");
@@ -13,7 +13,7 @@ const MetricCard = ({ label, value, subValue, description }) => {
             {label}
           </Text>
           <Tooltip label={description} fontSize="md">
-            <InfoOutlineIcon color={textColor} />
+            <AiOutlineInfoCircle color={textColor} />
           </Tooltip>
         </Flex>
         <Box textAlign="right">
